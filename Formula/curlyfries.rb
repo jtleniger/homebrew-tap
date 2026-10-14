@@ -1,20 +1,20 @@
 class Curlyfries < Formula
   desc "Filesystem-driven CLI API client: requests as JSON files, environments as JSON, captures persisted in a session file"
   homepage "https://github.com/jtleniger/curlyfries"
-  version "1.0.0"
+  version "1.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jtleniger/curlyfries/releases/download/v1.0.0/curlyfries-aarch64-apple-darwin.tar.xz"
-      sha256 "a7caa3bd43ce9cc0688a683e0b9cdeb23e7212414a1951d5739343dbd4c5628a"
+      url "https://github.com/jtleniger/curlyfries/releases/download/v1.1.0/curlyfries-aarch64-apple-darwin.tar.xz"
+      sha256 "d8205d4a72492c1660ab7ac9d4bbffc0a65f3a2c6446cc11f7686cd9490030ee"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jtleniger/curlyfries/releases/download/v1.0.0/curlyfries-x86_64-apple-darwin.tar.xz"
-      sha256 "68b64a1b14eff8dcf133ceebef121b95136cc4bb36a419886b554b6b3facf552"
+      url "https://github.com/jtleniger/curlyfries/releases/download/v1.1.0/curlyfries-x86_64-apple-darwin.tar.xz"
+      sha256 "142e0b89a0ee2a3933ec2debcd93fbba4223870258e7df4250c08d327f929edc"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/jtleniger/curlyfries/releases/download/v1.0.0/curlyfries-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "c10127aaa789522453db2fb3a8c2bad4e216024e4cc7de8a438346f42236aed8"
+    url "https://github.com/jtleniger/curlyfries/releases/download/v1.1.0/curlyfries-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "f4f402c1a146deddcd50633931acc31d014efcf7bc082b96c185a1ff12f6099a"
   end
   license "GPL-3.0-only"
 
